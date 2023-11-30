@@ -1,3 +1,9 @@
+:root{
+    --sidebar-bg-color: #1992d4;
+    --content-bg-color: #e2e8f0;
+    --nav-bg-color: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,12 +20,16 @@
 
 .nav{
     grid-area: 1/2/2/3;
+    background-color: var(--nav-bg-color);
 }
 
 .sidebar{
     grid-area: 1/1/3/2;
+    background-color: var(--sidebar-bg-color);
+    
 }
 
 .content{
     grid-area: 2/2/3/3;
+    background-color: var(--content-bg-color);
 }
