@@ -100,4 +100,56 @@ img{
 .content{
     grid-area: 2/2/3/3;
     background-color: var(--content-bg-color);
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.projects-p{
+    margin-bottom: 15px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    gap: 15px;
+
+}
+
+.card{
+    padding: 15px;
+    background-color: var(--nav-bg-color);
+    border-left: solid orange;
+    border-radius: 1em;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto 1fr auto 1fr;
+    gap: 15px;
+}
+
+.announcements{
+    border-radius: 1em;
+    padding: 15px;
+    background-color: var(--nav-bg-color);
+}
+
+.announce:not(:last-child){
+    padding-bottom: 15px;
+    border-bottom: solid var(--content-bg-color);
+}
+
+.trending{
+    display: grid;
+    border-radius: 1em;
+    padding: 15px;
+    background-color: var(--nav-bg-color);
+}
+
+.trend{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
 }
